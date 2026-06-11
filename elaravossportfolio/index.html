@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elara Voss — Digital Designer</title>
+  <meta name="description" content="Elara Voss is a digital product designer crafting interfaces, identities and interactive experiences for ambitious brands." />
+  <meta name="theme-color" content="#0d0d0e" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0d0e'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-weight='800' font-size='15' fill='%23c8ff4d' text-anchor='middle'%3EEV%3C/text%3E%3C/svg%3E" />
+  <link rel="preload" href="fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <p class="preloader__name">Elara&nbsp;Voss<span class="accent">®</span></p>
+      <p class="preloader__count"><span data-counter>0</span></p>
+    </div>
+    <div class="preloader__bar"><span data-bar></span></div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">View</span></div>
+
+  <!-- Film grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="nav">
+    <a class="nav__logo" href="#top" data-magnetic>EV<span class="accent">©</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-magnetic>Work</a>
+      <a href="#about" data-magnetic>About</a>
+      <a href="#services" data-magnetic>Services</a>
+      <a href="#contact" data-magnetic>Contact</a>
+    </nav>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu" data-magnetic>
+      <span class="nav__toggle-label">Menu</span>
+    </button>
+  </header>
+
+  <!-- Fullscreen menu (mobile) -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#work"><span class="menu__index">01</span>Work</a>
+      <a href="#about"><span class="menu__index">02</span>About</a>
+      <a href="#services"><span class="menu__index">03</span>Services</a>
+      <a href="#contact"><span class="menu__index">04</span>Contact</a>
+    </nav>
+    <p class="menu__meta">Lisbon, PT — <span data-clock>00:00</span></p>
+  </div>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="webgl" aria-hidden="true"></canvas>
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-reveal>Digital Product Designer</p>
+        <h1 class="hero__title">
+          <span class="hero__line" data-split>Elara</span>
+          <span class="hero__line hero__line--right" data-split>Voss<span class="accent">®</span></span>
+        </h1>
+        <div class="hero__meta">
+          <p data-reveal>Crafting interfaces, identities <br />&amp; interactive experiences.</p>
+          <p data-reveal>Currently at Studio Mono <br />Lisbon, Portugal</p>
+          <p class="hero__avail" data-reveal><span class="dot"></span>Available — Q3 2026</p>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee>
+        <span>UI/UX&nbsp;—&nbsp;Brand&nbsp;—&nbsp;Motion&nbsp;—&nbsp;WebGL&nbsp;—&nbsp;Design&nbsp;Systems&nbsp;—&nbsp;</span>
+        <span>UI/UX&nbsp;—&nbsp;Brand&nbsp;—&nbsp;Motion&nbsp;—&nbsp;WebGL&nbsp;—&nbsp;Design&nbsp;Systems&nbsp;—&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- Work -->
+    <section class="work section" id="work">
+      <header class="section__head">
+        <h2 class="section__title" data-split>Selected Work</h2>
+        <p class="section__count">(04)</p>
+      </header>
+
+      <ul class="work__list">
+        <li class="work__item" data-preview="nova">
+          <a class="work__row" href="#contact" data-cursor="view">
+            <span class="work__index">01</span>
+            <span class="work__name">Nova Bank</span>
+            <span class="work__tags">Fintech · App Design</span>
+            <span class="work__year">2026</span>
+          </a>
+          <div class="work__thumb work__thumb--nova" aria-hidden="true"><span>Nova Bank</span></div>
+        </li>
+        <li class="work__item" data-preview="aether">
+          <a class="work__row" href="#contact" data-cursor="view">
+            <span class="work__index">02</span>
+            <span class="work__name">Aether OS</span>
+            <span class="work__tags">Product · Design System</span>
+            <span class="work__year">2025</span>
+          </a>
+          <div class="work__thumb work__thumb--aether" aria-hidden="true"><span>Aether OS</span></div>
+        </li>
+        <li class="work__item" data-preview="kinfolk">
+          <a class="work__row" href="#contact" data-cursor="view">
+            <span class="work__index">03</span>
+            <span class="work__name">Kinfolk Studio</span>
+            <span class="work__tags">Brand · E-commerce</span>
+            <span class="work__year">2025</span>
+          </a>
+          <div class="work__thumb work__thumb--kinfolk" aria-hidden="true"><span>Kinfolk Studio</span></div>
+        </li>
+        <li class="work__item" data-preview="pulse">
+          <a class="work__row" href="#contact" data-cursor="view">
+            <span class="work__index">04</span>
+            <span class="work__name">Pulse Fitness</span>
+            <span class="work__tags">Mobile · Motion Design</span>
+            <span class="work__year">2024</span>
+          </a>
+          <div class="work__thumb work__thumb--pulse" aria-hidden="true"><span>Pulse Fitness</span></div>
+        </li>
+      </ul>
+
+      <!-- Floating hover preview (desktop) -->
+      <div class="preview" aria-hidden="true">
+        <div class="preview__img preview__img--nova"><span>Nova Bank</span></div>
+        <div class="preview__img preview__img--aether"><span>Aether OS</span></div>
+        <div class="preview__img preview__img--kinfolk"><span>Kinfolk Studio</span></div>
+        <div class="preview__img preview__img--pulse"><span>Pulse Fitness</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <header class="section__head">
+        <h2 class="section__title" data-split>About</h2>
+        <p class="section__count">(EV)</p>
+      </header>
+      <p class="about__statement" data-words>
+        I design digital products that feel as good as they look —
+        blending strategy, systems and motion into experiences people
+        remember. For eight years I've helped startups and studios turn
+        complex problems into interfaces of unreasonable clarity.
+      </p>
+      <div class="about__stats">
+        <div class="stat" data-reveal>
+          <p class="stat__num" data-count="8">0</p>
+          <p class="stat__label">Years of practice</p>
+        </div>
+        <div class="stat" data-reveal>
+          <p class="stat__num" data-count="60">0</p>
+          <p class="stat__label">Projects shipped</p>
+        </div>
+        <div class="stat" data-reveal>
+          <p class="stat__num" data-count="12">0</p>
+          <p class="stat__label">Design awards</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <header class="section__head">
+        <h2 class="section__title" data-split>Services</h2>
+        <p class="section__count">(03)</p>
+      </header>
+      <ul class="services__list">
+        <li class="service" data-reveal>
+          <span class="service__index">01</span>
+          <h3 class="service__name">Product&nbsp;Design</h3>
+          <p class="service__desc">End-to-end UX & UI for web and mobile — from research and flows to pixel-final screens your engineers will love.</p>
+        </li>
+        <li class="service" data-reveal>
+          <span class="service__index">02</span>
+          <h3 class="service__name">Design&nbsp;Systems</h3>
+          <p class="service__desc">Scalable component libraries, tokens and documentation that keep growing teams shipping consistently.</p>
+        </li>
+        <li class="service" data-reveal>
+          <span class="service__index">03</span>
+          <h3 class="service__name">Motion&nbsp;&amp;&nbsp;WebGL</h3>
+          <p class="service__desc">Interaction design, GSAP choreography and shader-driven moments that make products unmistakably alive.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer section" id="contact">
+      <p class="footer__eyebrow" data-reveal>Have an idea?</p>
+      <h2 class="footer__title">
+        <span class="footer__line" data-split>Let's&nbsp;make</span>
+        <span class="footer__line" data-split>it&nbsp;real<span class="accent">.</span></span>
+      </h2>
+      <a class="footer__mail" href="mailto:hello@elaravoss.studio" data-magnetic data-reveal>hello@elaravoss.studio</a>
+      <div class="footer__bottom">
+        <p>© 2026 Elara Voss</p>
+        <nav class="footer__socials" aria-label="Social">
+          <a href="#top" data-magnetic>Dribbble</a>
+          <a href="#top" data-magnetic>LinkedIn</a>
+          <a href="#top" data-magnetic>Instagram</a>
+        </nav>
+        <p>Lisbon, PT — <span data-clock>00:00</span></p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
